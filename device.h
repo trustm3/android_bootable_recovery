@@ -67,7 +67,7 @@ class Device {
 
     enum BuiltinAction { NO_ACTION, REBOOT, APPLY_EXT,
                          APPLY_CACHE,   // APPLY_CACHE is deprecated; has no effect
-                         APPLY_ADB_SIDELOAD, WIPE_DATA, WIPE_CACHE,
+                         WIPE_DATA, WIPE_CACHE,
                          REBOOT_BOOTLOADER, SHUTDOWN, READ_RECOVERY_LASTLOG };
 
     // Perform a recovery action selected from the menu.

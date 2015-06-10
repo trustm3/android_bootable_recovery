@@ -917,7 +917,7 @@ prompt_and_wait(Device* device, int status) {
             case Device::READ_RECOVERY_LASTLOG:
                 choose_recovery_file(device);
                 break;
-
+#if 0
             case Device::APPLY_ADB_SIDELOAD:
                 status = apply_from_adb(ui, &wipe_cache, TEMPORARY_INSTALL_FILE);
                 if (status >= 0) {
@@ -932,6 +932,7 @@ prompt_and_wait(Device* device, int status) {
                     }
                 }
                 break;
+#endif
         }
     }
 }
